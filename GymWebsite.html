@@ -19,6 +19,7 @@
             height: 100%;
             
             background-image: url(img/gym.jpg);
+            /* background-color: rgb(101, 0, 0); */
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -27,8 +28,8 @@
             /* border: solid 2px red; */
             display: inline-block;
             position: absolute;
-            left: 0px;
-            top: 20px;
+            left: 25px;
+            top: 0px;
             text-align: center;
             font-weight: bolder;
             color: rgb(0, 0, 0);
@@ -75,7 +76,7 @@
             font-size: 25px;
             padding: 20px;
             cursor: pointer;
-            /* color: rgb(0, 0, 0); */
+            
         }
         .NavBar li a:hover{
             text-decoration: none;
@@ -132,14 +133,14 @@
             position: fixed;
         }
         form{
-            top: 400px;
+            top: 200px;
             position: static;
             display: inline block;
-            margin: 200px 100px;
+            margin: 68px 100px;
             left: 1000px;
             width: 53%;
             /* border:  2px solid saddlebrown; */
-            padding: 30px;
+            padding: 00px;
             font-family: 'PT Sans', sans-serif;
             font-size: 20px;
             
@@ -149,11 +150,18 @@
            
         }
         div form label{
-            background: linear-gradient(rgb(79, 79, 79) 0%, transparent 60%);
-            border-radius: 20%;
+            background: linear-gradient(rgb(79, 79, 79) 0%, transparent 100%);
+            border-radius: 50%;
+            display: block;
+            width: 50%;
+            text-align: center;
+            margin-left: 25%;
         }
         div form input{
             background: linear-gradient(rgb(79, 79, 79) 0%, transparent 50%);
+            padding: 0px;
+            margin-bottom: 32px;
+
 
         }
         div form h2{
@@ -161,6 +169,20 @@
             text-align: center;
             border-top-left-radius: 50%;
             border-top-right-radius: 50%;
+        }
+        div form input#btn{
+            padding: 10px;
+            margin: 20px;
+            color: antiquewhite;
+            background-color: black;
+        }
+        div form input#btn:hover{
+            padding: 10px;
+            margin: 30px;
+            cursor:pointer;
+        }
+        div form textarea{
+            margin-top: 5px;
         }
         
         
@@ -211,22 +233,28 @@
             <div>
                 <input type="text" placeholder="your home address"> 
             </div>
+            <label for="gender">Your gender</label>
             <div>
-                <input type="radio" > male
-                <input type="radio" > female
+                <input type="radio" name="gender" > male
+                <input type="radio" name="gender"> female
             </div>
             <div>
-                <input type="number" placeholder="your age"> 
+                <label for="age">Your Age</label>
+                <input type="number" placeholder="enter your age here"> 
             </div>
             <label for="plan" >Subscription plan</label>
             <div>
-                <input type="radio">3months
-                <input type="radio">6months
-                <input type="radio">9months
+                <input type="radio" name="plan">3months
+                <input type="radio" name="plan">6months
+                <input type="radio" name="plan">9months
             </div>
             <label for="Home" >Home</label>
             <div>
-                <input type="text" placeholder="your Address"> 
+                <textarea name="home" id="" cols="60" rows="1" placeholder="Enter full resident area"></textarea>    
+            </div>
+            <div>
+                <input  class="submit" id="btn" type="submit" value="Share Details">
+                <input class="reset" id="btn" type="reset" value="reset now">
             </div>
             
 
